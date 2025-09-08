@@ -45,6 +45,6 @@ public class Pelicula {
 }
 
     public String toString() {
-        return "Título: " + titulo + ", Director: " + director + ", Año de estreno: " + fechaEstreno + "Duracion:" + duracion;
+        return "Título: " + titulo + ", Director: " + director + ", Año de estreno: " + fechaEstreno + ", Duracion:" + duracion;
     }
 }

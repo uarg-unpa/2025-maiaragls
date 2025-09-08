@@ -9,9 +9,9 @@ public class PruebaCancion{
     System.out.println(c1);
     System.out.println(c2);
 
+        System.out.println(c1.reproducirYPausar()); 
+        System.out.println(c1.reproducirYPausar()); 
     
-        System.out.println(c1.reproducirYPausar()); 
-        System.out.println(c1.reproducirYPausar()); 
 
         System.out.println(c2.reproducirYPausar());
     }

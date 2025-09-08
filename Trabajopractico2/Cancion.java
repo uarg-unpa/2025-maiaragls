@@ -46,10 +46,10 @@ public class Cancion {
         } else {
             reproduciendo = true;
             return "La cancion se esta reproduciendo";
-        }
+ }
     }
     public String toString() {
-        return "Título: " + titulo + ", Artista: " + artista + ", album: " + album+ "Duracion:" + duracion;
+        return "Título: " + titulo + ", Artista: " + artista + ", album: " + album+ ", Duracion:" + duracion + " " + "minutos";
     }
 
 }
