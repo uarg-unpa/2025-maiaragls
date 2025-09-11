@@ -49,7 +49,7 @@ public class Cancion {
  }
     }
     public String toString() {
-        return "Título: " + titulo + ", Artista: " + artista + ", album: " + album+ ", Duracion:" + duracion + " " + "minutos";
+        return "Título: " + titulo + " Artista: " + artista + " album: " + album+ " Duracion:" + duracion + " " + "minutos";
     }
 
 }

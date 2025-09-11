@@ -2,14 +2,14 @@ public class Pelicula {
     // atributos
     private String titulo;
     private String director;
-    private int fechaEstreno;
+    private int AnioEstreno;
     private double duracion;
 
     // constructor
-    public Pelicula(String titulo, String director, int fechaEstreno, double duracion) {
+    public Pelicula(String titulo, String director, int AnioEstreno, double duracion) {
         this.titulo = titulo;
         this.director = director;
-        this.fechaEstreno = fechaEstreno;
+        this.AnioEstreno = AnioEstreno;
         this.duracion = duracion;
     }
 
@@ -20,8 +20,8 @@ public class Pelicula {
     public String getDirector() {
         return director;
     }
-    public int getFechaEstreno() {
-        return fechaEstreno;
+    public int getAnioEstreno() {
+        return anioEstreno;
     }
      public double getDuracion() {
         return duracion;
@@ -33,18 +33,18 @@ public class Pelicula {
     public void setDirector(String director) {
         this.director = director;
     }
-    public void setFechaEstreno(int fechaEstreno) {
-        this.fechaEstreno = fechaEstreno;
+    public void setAnioEstreno(int AnioEstreno) {
+        this.anioEstreno = anioEstreno;
     }
      public void setDuracion (double duracion) {
         this.duracion = duracion;
     }
 
     public int calcularAntiguedad(int anioActual) {
-    return anioActual - this.fechaEstreno;
+    return anioActual - this.anioEstreno;
 }
 
     public String toString() {
-        return "Título: " + titulo + ", Director: " + director + ", Año de estreno: " + fechaEstreno + ", Duracion:" + duracion;
+        return "Título: " + titulo + " Director: " + director + " Año de estreno: " + anioEstreno + " Duracion:" + duracion;
     }
 }
