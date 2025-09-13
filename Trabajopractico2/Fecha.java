@@ -40,20 +40,22 @@ public class Fecha {
             this.anio = anio;
         }
     }
-     public boolean fechaValida(int dia, int mes, int anio) {
+    public boolean fechaValida(int dia, int mes, int anio) {
     if (mes < 1 || mes > 12 || dia < 1) {
         return false;
     }
 
-    if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
-        return dia <= 31;
-    } 
-    else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
-        return dia <= 30;
-    } 
-    else if (mes == 2) {  
-        return dia <= 28;
+    switch (mes) {
+        case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+            return dia <= 31;
+
+        case 4: case 6: case 9: case 11:
+            return dia <= 30;
+
+        case 2:
+            return dia <= 28;
     }
+
     return false;
 }
     public String getNombreMes() {

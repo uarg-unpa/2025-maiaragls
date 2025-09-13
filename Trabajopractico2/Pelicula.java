@@ -2,14 +2,14 @@ public class Pelicula {
     // atributos
     private String titulo;
     private String director;
-    private int AnioEstreno;
+    private int anioEstreno;
     private double duracion;
 
     // constructor
-    public Pelicula(String titulo, String director, int AnioEstreno, double duracion) {
+    public Pelicula(String titulo, String director, int anioEstreno, double duracion) {
         this.titulo = titulo;
         this.director = director;
-        this.AnioEstreno = AnioEstreno;
+        this.anioEstreno = anioEstreno;
         this.duracion = duracion;
     }
 
@@ -33,7 +33,7 @@ public class Pelicula {
     public void setDirector(String director) {
         this.director = director;
     }
-    public void setAnioEstreno(int AnioEstreno) {
+    public void setAnioEstreno(int anioEstreno) {
         this.anioEstreno = anioEstreno;
     }
      public void setDuracion (double duracion) {

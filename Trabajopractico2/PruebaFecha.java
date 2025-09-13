@@ -21,6 +21,6 @@ public class PruebaFecha {
         } else {
             System.out.println("Las dos fechas tienen el mismo año");
         }
-         System.out.printf("La fecha con mayor año es: %02d/%02d/%04d\n", mayor.getDia(), mayor.getMes(), mayor.getAnio());
+         System.out.printf("La fecha con mayor año es:" + mayor.getDia() +"/" + mayor.getMes()+"/"+ mayor.getAnio());
     }
 }
